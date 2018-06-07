@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CONTACT</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style/contact.css">
+	<link rel="stylesheet" type="text/css" href="style/animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+	<div class="navi"> 
+		<span class="nav" onclick="openNav()">&#9776;</span>
+	</div>
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="index.html" class="home">Home</a>
+			<a href="about.html" class="abou">Over mij</a>
+			<a href="woks.html" class="works">Portfolio</a>
+			<a href="contact.html" class="con">Contact</a>
+		</div>
+	</div>
+	<div class="main">
+		<div class="fade">
+			<h1 class="faded">Nice to Meet You</h1>
+		</div>
+		<h1 class="animated fadeInUp tekst">Nice to Meet You</h1>
+		<h2 class="animated fadeInUp tekst">Hebt u een vraag of wilt u contact opnemen?</h2>
+	</div>
+	<div class="maps">
+		<div id="map"></div>
+	</div>
+	<div class="content">
+		<div class="contact">
+			<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+			<h4>Leave a message</h4>
+			<form id="contact-form" action="mailto:ahavrylchenko@gmail.com" method="post" enctype="text/plain">
+  				<p>Beste Anastasiia,</p>
+  				<p>Mijn
+   				<label for="your-name">naam</label> is
+    			<input type="text" name="your-name" id="your-name" minlength="3" placeholder="(uw naam)" required> en</p>
+
+  				<p>mijn
+    				<label for="email">e-mailaddress</label> is
+    				<input type="email" name="your-email" id="email" placeholder="(uw e-mailaddress)" required>
+  				</p><br/>
+
+  				<p>ik heb
+    				<label for="your-message">een bericht</label> voor jou,
+    			</p>
+  				<p>
+    				<textarea name="your-message" id="your-message" placeholder="(uw bericht)" class="expanding" required></textarea>
+  				</p>
+  				<p>
+    				<button type="submit">
+      					<svg version="1.1" class="send-icn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="36px" viewBox="0 0 100 36" enable-background="new 0 0 100 36" xml:space="preserve">
+        					<path d="M100,0L100,0 M23.8,7.1L100,0L40.9,36l-4.7-7.5L22,34.8l-4-11L0,30.5L16.4,8.7l5.4,15L23,7L23.8,7.1z M16.8,20.4l-1.5-4.3
+						l-5.1,6.7L16.8,20.4z M34.4,25.4l-8.1-13.1L25,29.6L34.4,25.4z M35.2,13.2l8.1,13.1L70,9.9L35.2,13.2z" />
+      					</svg>
+     				 	<small>verzenden</small>
+   					 </button>
+  				</p>
+			</form>
+		</div>
+	</div>
+	
+
+<script src="scripts/jquery.slim.min.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+<script type="text/javascript" src="scripts/menu.js"></script>
+<script type="text/javascript" src="scripts/link.js"></script>
+<script type="text/javascript" src="scripts/map.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIio_DNHAnqm8U5pVgdDfYvbu3wETccgA&callback=initMap"
+    async defer></script>
+ 
+</body>
+</html>
