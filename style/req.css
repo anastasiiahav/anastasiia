@@ -251,6 +251,10 @@ div.container {
         margin: 150px 100px 150px 100px;
     }
 
+    iframe {
+        margin-bottom: 100px;
+    }
+
     /* Buttons */
     .btn {
         width: 60%;
