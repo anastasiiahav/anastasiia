@@ -1,34 +1,34 @@
 $(function(){
-	$(".sketch").on({
+	$(".phone").on({
 		mouseenter: function(){
-			$(this).attr('src','images/visual_bl.png');
+			$(this).attr('src','images/phonebl.png');
 		},
 		mouseleave: function(){
-			$(this).attr('src','images/visual.png');
+			$(this).attr('src','images/phone.png');
 		}
 	});
 
 });
 
 $(function(){
-	$(".adobe").on({
+	$(".mail").on({
 		mouseenter: function(){
-			$(this).attr('src','images/adobe_bl.png');
+			$(this).attr('src','images/mailbl.png');
 		},
 		mouseleave: function(){
-			$(this).attr('src','images/adobe.png');
+			$(this).attr('src','images/mail.png');
 		}
 	});
   
 });
 
 $(function(){
-	$(".html").on({
+	$(".in").on({
 		mouseenter: function(){
-			$(this).attr('src','images/html_bl.png');
+			$(this).attr('src','images/inbl.png');
 		},
 		mouseleave: function(){
-			$(this).attr('src','images/html.png');
+			$(this).attr('src','images/in.png');
 		}
 	});
   

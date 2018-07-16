@@ -1,3 +1,5 @@
+@import url('//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css');
+@import url('//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css');
 /* Algemeen */
 * {
     margin: 0;
@@ -497,6 +499,7 @@ a.menu:hover {
     h4 {
         margin-left: 100px;
   	}
+
   	p.foot {
 		    margin: 30px 30px 30px 30px;
 		    font-size: 16px;
@@ -616,7 +619,17 @@ a.menu:hover {
     .dutch {
       margin: 90px 80px 60px 0px;
     }
-}
+
+    .icon {
+      width: 50px;
+
+    }
+
+    .footer {
+      padding: 20px 40px 20px 40px;
+      display: flex;
+    }
+
 
 /* Large screens */
 @media only screen  and (min-width : 1824px) {
