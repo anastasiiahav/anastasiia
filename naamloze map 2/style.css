@@ -1,0 +1,184 @@
+/* Algemeen */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #de5b56;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation */
+span {
+    color: white;
+    right: 10px;
+    padding-right: 25px;
+    padding-top: 5px;
+}
+
+.nav {
+    font-size: 40px;
+}
+
+.navi {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    transition: 0.5s;
+ }
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 40px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #de5b56;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    right: 1px;
+    padding-right: 25px;
+    padding-top: 5px;
+    font-size: 60px;
+}
+
+/* Text */
+h1.tekst {
+	color: white;
+	font-size: 45px;
+    -webkit-animation-delay: 0.3s;
+    margin-top: -190px;
+}
+
+h2.tekst {
+	color: white;
+	font-size: 29px;
+    margin-top: 10px;
+    -webkit-animation-delay: 2.1s;
+}
+
+h1.faded {
+    font-size: 110px;
+    opacity: 0.1;
+    color: white;
+    z-index: -10;
+}
+
+/* Containers */
+.main {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-flow: column;
+    margin-left: 10%;
+    height: 100vh;
+}
+
+.fade {
+    padding-top: 30px;
+    margin-left: -20px;
+}
+
+/* iPads */
+@media only screen and (min-device-width : 768px) {
+    /* Text */
+    h1.tekst {
+        color: white;
+        font-size: 70px;
+        -webkit-animation-delay: 0.3s;
+        margin-top: -240px;
+    }
+
+    h2.tekst {
+        color: white;
+        font-size: 40px;
+        margin-top: 10px;
+        -webkit-animation-delay: 2.1s;
+    }
+
+    h1.faded {
+        font-size: 140px;
+        opacity: 0.1;
+        color: white;
+        z-index: -10;
+    }
+}
+
+/* Desktops & laptops */
+@media only screen  and (min-width : 1224px) {
+    /* Text */
+    h1.tekst {
+        color: white;
+        font-size: 80px;
+        -webkit-animation-delay: 0.3s;
+        margin-top: -200px;
+    }
+
+    h2.tekst {
+        color: white;
+        font-size: 50px;
+        margin-top: 10px;
+        -webkit-animation-delay: 2.1s;
+    }
+
+    h1.faded {
+        font-size: 170px;
+        opacity: 0.1;
+        color: white;
+        z-index: -10;
+    }
+}
+
+/* Large screens */
+@media only screen  and (min-width : 1824px) {
+        /* Text */
+    h1.tekst {
+        color: white;
+        font-size: 80px;
+        -webkit-animation-delay: 0.3s;
+        margin-top: -200px;
+    }
+
+    h2.tekst {
+        color: white;
+        font-size: 50px;
+        margin-top: 10px;
+        -webkit-animation-delay: 2.1s;
+    }
+
+    h1.faded {
+        font-size: 170px;
+        opacity: 0.1;
+        color: white;
+        z-index: -10;
+    }
+}

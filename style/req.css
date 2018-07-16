@@ -10,65 +10,35 @@ body {
 }
 
 /* Navigation */
-span {
-    color: white;
-    right: 10px;
-    padding-right: 25px;
-    padding-top: 5px;
-}
-
-.nav {
-    font-size: 40px;
-}
-
-.navi {
+nav {
+    float:right;
+    writing-mode:tb-rl;/*IE*/
+    writing-mode:vertical-lr;/* OPera/webkit*/
+    writing-mode:sideways-lr;/* should be the one */   
+    background-color: white;  
+    height: 100%; 
     display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    height: 70px;
-    width: 100%;
-    transition: 0.5s;
- }
-
-.overlay {
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: white;
-    overflow-y: hidden;
-    transition: 0.5s;
+    justify-content: center;
+    position: fixed !important;
+    right: 0;
+    z-index: 30;
+}
+    
+li {
+    display:inline-block;
 }
 
-.overlay-content {
-    position: relative;
-    top: 30%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
+a.menu {
+    display:inline-block;
+    color: black;
+    font-size: 15px;
+    margin: 50px 0px 50px 0px;
+    text-transform: uppercase;
 }
 
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 40px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
+a.menu:hover {
     color: #de5b56;
-}
-
-.overlay .closebtn {
-    position: absolute;
-    right: 1px;
-    padding-right: 25px;
-    padding-top: 5px;
-    font-size: 60px;
+    text-decoration: none;
 }
 
 /* Text */

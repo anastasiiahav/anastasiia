@@ -70,7 +70,51 @@ span {
     padding-top: 5px;
     font-size: 60px;
 }
+/* Navigation */
+nav {
+    float:right;
+    writing-mode:tb-rl;/*IE*/
+    writing-mode:vertical-lr;/* OPera/webkit*/
+    writing-mode:sideways-lr;/* should be the one */   
+    background-color: white;  
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    position: fixed !important;
+    right: 0;
+    z-index: 30;
+}
+    
+li {
+    display:inline-block;
+}
 
+a.menu {
+    display:inline-block;
+    color: black;
+    font-size: 15px;
+    margin: 50px 0px 50px 0px;
+    text-transform: uppercase;
+}
+
+a.menu:hover {
+    color: #de5b56;
+    text-decoration: none;
+}
+
+
+
+@keyframes backAndForth {
+    20% {
+        top: 15px; 
+    }
+    60%, 80% {
+        top: 50px; 
+    }
+    90% {
+        top: 15px; 
+    }
+}
 /* Text */
 h1 {
 	color: white;
@@ -100,7 +144,6 @@ p {
     color: white;
     font-size: 18px;
     margin-left: 20px;
-    margin-right: 20px;
 }
 
 hr {
@@ -175,7 +218,7 @@ button {
 }
 
 div.container {
-    margin: 40px 10px 40px 10px;
+    margin: 40px 10px 10px 10px;
 }
 
 /* iPads */
@@ -248,7 +291,7 @@ div.container {
 
     /* Containers */
     div.container {
-        margin: 150px 100px 150px 100px;
+        margin: 150px 0px 150px 100px;
     }
 
     /* Buttons */
