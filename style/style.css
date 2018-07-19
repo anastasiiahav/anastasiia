@@ -7,7 +7,7 @@
 
 body {
     background-color: #de5b56;
-	font-family: 'Montserrat', sans-serif;
+	  font-family: 'Montserrat', sans-serif;
 }
 /* Form */
 #contact-form {
@@ -176,12 +176,6 @@ p {
     margin-right: 20px;
 }
 
-p.sktext {
-    margin-top: 10px;
-    margin-bottom: 50px;
-    font-size: 15px;
-}
-
 hr {
     width: 60%;
     border-top: 2px solid white;
@@ -219,23 +213,28 @@ h4 {
   color: white;
 }
 
+.text {
+  margin-left: 0px;
+  margin-right: 25px;
+  margin-top: 40%;
+}
+
 /* Images */
-img {
-    width: 100%;
+img.profoto {
+    width: 90%;
+    margin-left: 15px;
+    margin-right: 0px;
 }
 
-img.sk {
-    width: 17%;
-}
-
-img.adobe {
-    width: 18%;
+img.icon {
+  width: 30px;
+  padding-top: 10px; 
 }
 
 /* Mouse */	
 .mouse {
-	width:50px;
-  	height: 75px;
+	  width: 40px;
+  	height: 65px;
   	border: 3px white solid;
   	border-radius: 50px;	
 }
@@ -244,7 +243,7 @@ img.adobe {
   	position: absolute;
   	height: 10px;
   	width: 10px;
-  	left: 80%;
+  	left: 70%;
   	top: 15px;
   	transform: translateX(-50%);
   	border-radius: 50px;
@@ -254,13 +253,13 @@ img.adobe {
 
 @keyframes backAndForth {
   	20% {
-   		top: 15px; 
+   		top: 10px; 
   	}
   	60%, 80% {
-   		top: 50px; 
+   		top: 45px; 
   	}
   	90% {
-   		top: 15px; 
+   		top: 10px; 
   	}
 }
 /* Buttons */
@@ -300,10 +299,10 @@ button {
 
 /* Containers */
 .main {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	flex-flow: column;
+	  display: flex;
+	  justify-content: center;
+	  align-content: center;
+	  flex-flow: column;
     margin-left: 10%;
     height: 100vh;
 }
@@ -319,34 +318,42 @@ button {
 
 /* Navigation */
 nav {
-  	float:right;
-  	writing-mode:tb-rl;/*IE*/
-  	writing-mode:vertical-lr;/* OPera/webkit*/
-  	writing-mode:sideways-lr;/* should be the one */   
-  	background-color: white;  
-  	height: 100%; 
+  	float:left;
+    writing-mode: inherit;
+    writing-mode: initial;
+    writing-mode: unset;
+  	background-color: #de5b56; 
   	display: flex;
-  	justify-content: center;
+  	justify-content: flex-start;
   	position: fixed !important;
-  	right: 0;
   	z-index: 30;
+    width: 100%;
+}
+.navbar-toggler-icon {
+    margin-left: -10px;
 }
 	
 li {
-	display:inline-block;
+	  display:inline-block;
 }
 
 a.menu {
-	display:inline-block;
-	color: black;
-	font-size: 15px;
-	margin: 50px 0px 50px 0px;
-	text-transform: uppercase;
+	  display:inline-block;
+	  color: white !important;
+	  font-size: 15px;
+	  margin: 0px 0px 0px 20px;
+	  text-transform: uppercase;
 }
 
 a.menu:hover {
-	color: #de5b56;
-	text-decoration: none;
+	  color: #de5b56;
+	  text-decoration: none;
+}
+
+.navbar-toggler {
+    background-color: transparent !important;
+    border: none;
+    width: 20px;
 }
 
 .container {
@@ -362,6 +369,8 @@ a.menu:hover {
 	   background-color: #303030;
      display: flex;
 	   justify-content: center;
+     height: 50px;
+     width: 100%;
 }
 
 /* iPads */
@@ -448,6 +457,10 @@ a.menu:hover {
   		transform: translate(-50%, -50%);
 	}
 
+  .navbar {
+        background-color: white;
+    }
+
 /* Containers */
   .about {
       display: flex;
@@ -502,7 +515,11 @@ a.menu:hover {
   	p.foot {
 		    margin: 30px 30px 30px 30px;
 		    font-size: 16px;
-	}
+	  }
+
+    .navbar {
+        background-color: white;
+    }
 
     /* Navigation */
 	nav {
@@ -514,9 +531,11 @@ a.menu:hover {
   		height: 100%; 
   		display: flex;
   		justify-content: center;
+      flex-direction: row !important;
   		position: fixed !important;
   		right: 0;
   		z-index: 30;
+      width: 4%;
 	}
 	
 	li {
@@ -525,7 +544,7 @@ a.menu:hover {
 
 	a.menu {
 		  display:inline-block;
-		  color: black;
+		  color: black !important;
 		  font-size: 15px;
 		  margin: 50px 0px 50px 0px;
 		  text-transform: uppercase;
@@ -579,7 +598,7 @@ a.menu:hover {
 
 	/* Containers */
 	 .contact {
-    margin-top: 80px;
+      margin-top: 80px;
     	margin-right: 80px;
     	margin-left: 80px;
   	}
@@ -629,6 +648,10 @@ a.menu:hover {
       display: flex;
     }
 
+    .navbar {
+      background-color: white;
+    }
+
 
 /* Large screens */
 @media only screen  and (min-width : 1824px) {
@@ -652,5 +675,9 @@ a.menu:hover {
         opacity: 0.1;
         color: white;
         z-index: -10;
+    }
+
+    .navbar {
+        background-color: white;
     }
 }

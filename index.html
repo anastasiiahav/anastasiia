@@ -10,12 +10,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light fixed bg-light" id="navbar-example2">
+	<div class="navi">
+		<nav class="navbar navbar-expand-sm navbar-light fixed" id="navbar-example2">
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     		<span class="navbar-toggler-icon"></span>
   		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    		<ul class="navbar-nav mr-auto">
+		<div class="collapse navbar-collapse navbar-light" id="navbarSupportedContent">
+    		<ul class="navbar-nav mr-auto flex-sm-colum flex-md-row">
 				<li class="nav-item"><a href="#home" class="menu nav-link">Home</a></li>
 				<li class="nav-item"><a href="#over" class="menu nav-link">Over mij</a></li>
 				<li class="nav-item"><a href="#port" class="menu nav-link">Portfolio</a></li>
@@ -23,6 +24,7 @@
 			</ul>
 		</div>
 	</nav>
+	</div>
 	<div class="container">
   		<div class="mouse">
     		<div class="scroller"></div>
@@ -30,9 +32,6 @@
 	</div>
 	<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
 		<div class="main" id="home">
-			<div class="fade">
-				<h1 class="faded">Hello world</h1>
-			</div>
 			<div class="text">
 				<h1 class="animated fadeInUp tekst">Hello world,</h1>
 				<h2 class="tekst">
@@ -164,13 +163,13 @@
 		</div>
 		<div class="footer">
 			<div class="row">
-				<div class="col-sm">
+				<div class="col">
 					<a href="tel:0640615164"><img src="images/phone.png" class="icon phone"></a>
 				</div>
-				<div class="col-sm">
+				<div class="col">
 					<a href="mailto:ahavrylchenko@gmail.com?Subject=Hi%20there"><img src="images/mail.png" class="icon mail"></a>
 				</div>
-				<div class="col-sm">
+				<div class="col">
 					<a href="https://www.linkedin.com/in/anastasiia-havrylchenko/"><img src="images/in.png" class="icon in"></a>
 				</div>
 			</div>
