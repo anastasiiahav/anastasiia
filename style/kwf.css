@@ -11,34 +11,46 @@ body {
 
 /* Navigation */
 nav {
-    float:right;
-    writing-mode:tb-rl;/*IE*/
-    writing-mode:vertical-lr;/* OPera/webkit*/
-    writing-mode:sideways-lr;/* should be the one */   
-    background-color: white;  
-    height: 100%; 
+    float: left;
+    writing-mode: inherit;
+    writing-mode: initial;
+    writing-mode: unset;
+    background-color: #de5b56; 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     position: fixed !important;
-    right: 0;
     z-index: 30;
+    width: 100%;
+}
+.navbar-toggler-icon {
+    margin-left: -10px;
 }
     
 li {
-    display:inline-block;
+    display: inline-block;
+}
+
+li:hover {
+    font-style: italic;
 }
 
 a.menu {
-    display:inline-block;
-    color: black;
+    display: inline-block;
+    color: white !important;
     font-size: 15px;
-    margin: 50px 0px 50px 0px;
+    margin: 0px 0px 0px 20px;
     text-transform: uppercase;
 }
 
 a.menu:hover {
     color: #de5b56;
     text-decoration: none;
+}
+
+.navbar-toggler {
+    background-color: transparent !important;
+    border: none;
+    width: 20px;
 }
 
 @keyframes backAndForth {
@@ -56,7 +68,6 @@ a.menu:hover {
 p {
     color: white;
     font-size: 18px;
-    margin-right: -250px;
 }
 
 a {
@@ -68,42 +79,61 @@ a:hover {
     color: #de5b56;
 }
 
+/* Parallax */
+.parallax1 {
+    /* The image used */
+    background-image: url("bus.jpg");
+
+    /* Set a specific height */
+    height: 100vh; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("kwfwire.JPG");
+
+    /* Set a specific height */
+    height: 600px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* Images */
-img {
-    width: 100vw;
-}
-
-/* Buttons */
-button {
-    text-transform: uppercase;
-    width: 90%;
-    height: 40px;
-    margin-top: 20px;
-}
-
-.btn {
-    border-radius: 0;
-    color: black;
-    border: none;
-    background-color: white;
-    font-size: 16px;
-    transition: all 1s;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background-color: white;
-    color: #de5b56;
-    -webkit-transition: all .8s ease-in-out;  
-    border: none;
-    -webkit-box-shadow: 6px 6px 12px 0px rgba(0,0,0,0.24);
-    -moz-box-shadow: 6px 6px 12px 0px rgba(0,0,0,0.24);
-    box-shadow: 6px 6px 12px 0px rgba(0,0,0,0.24);
+img.icon {
+    width: 30px;
+    padding-top: 10px; 
 }
 
 /* Containers */
 div.container {
-    margin: 40px 10px 10px 10px;
+    margin: 40px 10px 40px 10px;
+}
+
+.footer {
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+}
+
+.pdf {
+    margin-bottom: -10px;
+}
+
+object {
+    width: 100%;
+    height: 600px;
 }
 
 /* iPads */
@@ -112,10 +142,61 @@ div.container {
 
 
     /* Containers */
+    .footer {
+        height: 70px;
+    }
     
-
     /* Images */
+    img.icon {
+        width: 45px;
+        padding-top: 10px; 
+    }
 
+    /* Navigation */
+    nav {
+        float:left;
+        writing-mode: inherit;
+        writing-mode: initial;
+        writing-mode: unset;
+        background-color: #de5b56; 
+        display: flex;
+        justify-content: flex-start;
+        position: fixed !important;
+        z-index: 30;
+        width: 100%;
+    }
+
+    .navbar-toggler-icon {
+        margin-left: -10px;
+    }
+  
+    li {
+        display: inline-block;
+    }
+
+    a.menu {
+        display: inline-block;
+        color: white !important;
+        font-size: 15px;
+        margin: 0px 0px 0px 20px;
+        text-transform: uppercase;
+    }
+
+    a.menu:hover {
+        color: #de5b56;
+        text-decoration: none;
+    }
+
+    .navbar-toggler {
+        background-color: transparent !important;
+        border: none;
+        width: 20px;
+    }
+
+    .collapse {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 
@@ -129,10 +210,9 @@ div.container {
         margin: 150px 0px 150px 100px;
     }
 
-    /* Buttons */
-    .btn {
-        width: 60%;
-        margin: 50px 0px 0px 0px;
+    .footer {
+        padding: 20px 40px 20px 40px;
+        height: 100px;
     }
 
     .pdf {
@@ -140,8 +220,55 @@ div.container {
         justify-content: center;
         margin-bottom: 80px;
     }
-}
 
+    /* Navigation */
+    .navbar {
+        background-color: white;
+    }
+
+    nav {
+        float: right;
+        writing-mode:tb-rl;/*IE*/
+        writing-mode:vertical-lr;/* OPera/webkit*/
+        writing-mode:sideways-lr;/* should be the one */   
+        background-color: white;  
+        height: 100%; 
+        display: flex;
+        justify-content: center;
+        flex-direction: row !important;
+        position: fixed !important;
+        right: 0;
+        z-index: 30;
+        width: 5%;
+    }
+    
+    li {
+        display:inline-block;
+    }
+
+    a.menu {
+        display:inline-block;
+        color: black !important;
+        font-size: 15px;
+        margin: 50px 0px 50px 0px;
+        text-transform: uppercase;
+    }
+
+    a.menu:hover {
+        color: #de5b56;
+        text-decoration: none;
+    }
+
+
+}
+/* Not that large screens */
+@media only screen  and (min-width : 1524px) {
+    /* Images */
+    img.icon {
+        width: 45px;
+        padding-top: 10px; 
+    }
+}
 /* Large screens */
 @media only screen  and (min-width : 1824px) {
     /* Text */
