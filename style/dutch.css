@@ -251,6 +251,16 @@ div.container {
         width: 45px;
         padding-top: 10px; 
     }
+
+    /* Text */
+    p {
+        margin: 0 -300px 0 0;
+    }
+
+    /* Containers */
+    div.container {
+        margin: 150px 10px 150px 100px;
+    }
 }
 
 /* Large screens */
