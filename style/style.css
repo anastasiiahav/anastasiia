@@ -374,7 +374,7 @@ div.degriek {
 }
 
 .dutch {
-  margin-left: 10px;
+    margin-left: 10px;
 }
 
 .contact {
@@ -399,20 +399,24 @@ nav {
 }
 	
 li {
-	  display: inline-block;
+	display: inline-block;
+}
+
+li:hover {
+    font-style: italic;
 }
 
 a.menu {
-	  display: inline-block;
-	  color: white !important;
-	  font-size: 15px;
-	  margin: 0px 0px 0px 20px;
-	  text-transform: uppercase;
+	display: inline-block;
+	color: white !important;
+	font-size: 15px;
+	margin: 0px 0px 0px 20px;
+	text-transform: uppercase;
 }
 
 a.menu:hover {
-	  color: #de5b56;
-	  text-decoration: none;
+	color: #de5b56;
+	text-decoration: none;
 }
 
 .navbar-toggler {
